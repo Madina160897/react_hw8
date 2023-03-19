@@ -1,20 +1,26 @@
 import React from 'react'
-import { Link, Outlet, useLocation  } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const MainPage = () => {
-    const location = useLocation();
-
-    console.log({location});
-    
     return (
         <>
-        <header className='df jc-sa'>
-            <Link to='/'><b> Main </b></Link> <br />
-            <Link to='/posts'> <b> Entrance </b></Link>
-        </header>
-        <div>
-            <h1 className='df jc-c'>Main Page</h1>
-        </div>
+            <header className='df jc-sa fd-c'>
+                <Link to='/people'>
+                    <div className='box-header'>
+                        <b> People </b>
+                    </div>
+                </Link> <br />
+                <Link to='/planets'>
+                    <div className='box-header'>
+                        <b> Planets </b>
+                    </div>
+                </Link> <br />
+                <Link to='/starships'>
+                    <div className='box-header'>
+                        <b> Starships </b>
+                    </div>
+                </Link>
+            </header>
         </>
     )
 }

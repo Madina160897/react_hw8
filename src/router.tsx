@@ -1,5 +1,5 @@
 import { createBrowserRouter } from "react-router-dom";
-import { EntrancePage, MainPage, ErrorPage, HelpPage } from "./routes/index"
+import { MainPage, ErrorPage, PeoplePage, PlanetPage, StarshipsPage } from "./routes/index"
 
 const router = createBrowserRouter([
     {
@@ -8,9 +8,21 @@ const router = createBrowserRouter([
         errorElement: <ErrorPage />,
     },
     {
-        path: '/posts', element: <EntrancePage />,
-        children: [{ path: '/posts/:postId', element: <HelpPage /> }]
+        path: '/people',
+        element: <PeoplePage />,
     },
+    {
+        path: '/planets',
+        element: <PlanetPage />,
+    },
+    {
+        path: '/starships',
+        element: <StarshipsPage />,
+    },
+    // {
+    //     path: '/posts', element: <EntrancePage />,
+    //     children: [{ path: '/posts/:postId', element: <HelpPage /> }]
+    // },
 ]);
 
 export default router;

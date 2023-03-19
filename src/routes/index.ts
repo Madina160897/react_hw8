@@ -1,4 +1,5 @@
-export {default as EntrancePage } from "./EntrancePage"
 export {default as MainPage } from "./MainPage"
 export {default as ErrorPage } from "./ErrorPage"
-export {default as HelpPage } from "./HelpPage"
+export {default as PeoplePage } from "./PeoplePage"
+export {default as PlanetPage } from "./PlanetPage"
+export {default as StarshipsPage } from "./StarshipsPage"
