@@ -3,7 +3,7 @@ export interface IPeople {
     height: number
     birth_year: string
     gender: string
-    homeworld: string
+    created: string
     url: string
 }
 

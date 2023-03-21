@@ -1,5 +1,14 @@
 import { createBrowserRouter } from "react-router-dom";
-import { MainPage, ErrorPage, PeoplePage, PlanetPage, StarshipsPage } from "./routes/index"
+import {
+    MainPage,
+    ErrorPage,
+    PeoplePage,
+    PlanetPage,
+    StarshipsPage,
+    PeopleInfo,
+    PlanetsInfo,
+    StarshipsInfo
+} from "./routes/index"
 
 const router = createBrowserRouter([
     {
@@ -12,17 +21,25 @@ const router = createBrowserRouter([
         element: <PeoplePage />,
     },
     {
+        path: "/people/:peoplesId",
+        element: <PeopleInfo />
+    },
+    {
         path: '/planets',
         element: <PlanetPage />,
+    },
+    {
+        path: "/planets/:planetsId",
+        element: <PlanetsInfo />
     },
     {
         path: '/starships',
         element: <StarshipsPage />,
     },
-    // {
-    //     path: '/posts', element: <EntrancePage />,
-    //     children: [{ path: '/posts/:postId', element: <HelpPage /> }]
-    // },
+    {
+        path: "/starships/:starshipsId",
+        element: <StarshipsInfo />
+    },
 ]);
 
 export default router;

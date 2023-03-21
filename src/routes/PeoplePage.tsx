@@ -12,11 +12,7 @@ const PeoplePage = () => {
         setPeopleId(id);
         navigate(`/people/${id}`);
         console.log(id);
-        
     };
-
-    
-    console.log({peopleId});
 
     return (
         <>

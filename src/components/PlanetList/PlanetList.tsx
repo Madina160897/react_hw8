@@ -41,7 +41,7 @@ const PlanetsList: FC<IProps> = () => {
   return (
     <div>
       <div className="header-page df jc-sa ai-c">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png" alt="" />
+        <img className="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6c/Star_Wars_Logo.svg/1200px-Star_Wars_Logo.svg.png" alt="" />
         <Link to='/'>
           <div>
             <b> Main </b>
